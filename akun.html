@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Akun</title>
+</head>
+<body>
+  <h3>Account Management</h3>
+
+  <table border="1" cellpadding="5">
+    <tr>
+      <!-- Kolom kiri -->
+      <td>
+        <!-- Foto -->
+        <h4>Profile Picture</h4>
+        <img src="./pas_foto.png" 
+        alt="Profile Photo" width="150"><br><br>
+        <input type="file" id="photo">
+
+        <br><br>
+
+        <!-- Password -->
+        <h4>Password</h4>
+        <label>New Password:</label><br>
+        <input type="password" id="newpass"><br><br>
+        <label>Confirm Password:</label><br>
+        <input type="password" id="confirmpass">
+      </td>
+
+      <!-- Kolom kanan -->
+      <td>
+        <h4>Profile Information</h4>
+        <table>
+          <tr>
+            <td>
+              <label>Username:</label><br>
+              <input type="text" id="username">
+            </td>
+            <td>
+              <label>First Name:</label><br>
+              <input type="text" id="firstname">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Nickname:</label><br>
+              <input type="text" id="nickname">
+            </td>
+            <td>
+              <label>Role:</label><br>
+              <select id="role">
+                <option value="tetap">Karyawan Tetap</option>
+                <option value="magang">Magang</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Last Name:</label><br>
+              <input type="text" id="lastname">
+            </td>
+            <td>
+              <label>Display Name:</label><br>
+              <input type="text" id="displayname">
+            </td>
+          </tr>
+        </table>
+
+        <h4>Contact Info</h4>
+        <table>
+          <tr>
+            <td>
+              <label>Email (required):</label><br>
+              <input type="email" id="email" required>
+            </td>
+            <td>
+              <label>Whatsapp:</label><br>
+              <input type="text" id="whatsapp">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Website:</label><br>
+              <input type="text" id="website">
+            </td>
+            <td>
+              <label>Telegram:</label><br>
+              <input type="text" id="telegram">
+            </td>
+          </tr>
+        </table>
+
+        <h4>About the User</h4>
+        <label>Biographical Info:</label><br>
+        <textarea id="info" rows="4" cols="40"></textarea>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
